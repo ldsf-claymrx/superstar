@@ -1,0 +1,62 @@
+.preguntas {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    color: #E88D04;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+
+}
+
+#accordionExample {
+    margin-bottom: 2em;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #E88D04;
+    color: white;
+}
+
+.accordion-button:focus {
+    border-color: #E88D04;
+    box-shadow: 0 0 0 0.25rem rgb(255 209 45 / 25%);
+}
+
+
+.DarkMode {
+    background: #202231;
+}
+
+.DarkMode .title {
+    color: white;
+}
+
+.DarkMode .status {
+    color: white;
+}
+
+.DarkMode .description-status {
+    color: white;
+}
+
+.DarkMode .footer {
+    background: linear-gradient(-45deg, #393A41, #393A41);
+}
+
+.DarkMode .bg-dark {
+    background: linear-gradient(-45deg, #393A41, #393A41);
+}
+
+.DarkMode .preguntas {
+    color: white;
+}
+
+.DarkMode .accordion-button:not(.collapsed) {
+    background: #393A41;
+    color: white;
+}
+
+.DarkMode .accordion-button:focus {
+    border-color: linear-gradient(-45deg, #393A41, #393A41);
+    box-shadow: 0 0 0 0.25rem rgba(42, 42, 56, 0.473);
+}

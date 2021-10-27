@@ -1,0 +1,121 @@
+.title {
+    font-size: 25px;
+    font-weight: 500;
+    text-align: center;
+    color: #E88D04;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+
+.realtime-description {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: justify;
+}
+
+.btn-success {
+    background-color: #E88D04;
+    border-color: #E88D04;
+}
+
+.listanormal{
+    text-align: center;
+}
+
+.h1-listanormal {
+    font-size: 22px;
+    font-weight: 500;
+    color: #E88D04;
+}
+
+.p-listanormal {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.listarapida{
+    text-align: center;
+}
+
+.h1-listarapida {
+    font-size: 22px;
+    font-weight: 500;
+    color: #E88D04;
+}
+
+.p-listarapida {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.listaespera {
+    text-align: center;
+}
+
+.h1-listaespera {
+    font-size: 22px;
+    font-weight: 500;
+    color: #E88D04;
+}
+
+.p-listaespera {
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.DarkMode {
+    background: #202231;
+}
+
+.DarkMode .footer {
+    background: linear-gradient(-45deg, #393A41, #393A41);
+}
+
+.DarkMode .bg-dark {
+    background: linear-gradient(-45deg, #393A41, #393A41);
+}
+
+.DarkMode .title {
+    color: white;
+}
+
+.DarkMode .realtime-description {
+    color: white;
+}
+
+.DarkMode .btn-success {
+    background-color: #393A41;
+    border-color: #393A41;
+}
+
+.DarkMode .p-listanormal {
+    color: white;
+}
+
+.DarkMode .h1-listanormal{
+    color: white;
+}
+
+.DarkMode .p-listarapida {
+    color: white;
+}
+
+.DarkMode .h1-listarapida{
+    color: white;
+}
+
+.DarkMode .p-listaespera {
+    color: white;
+}
+
+.DarkMode .h1-listaespera{
+    color: white;
+}
