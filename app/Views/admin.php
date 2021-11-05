@@ -78,9 +78,9 @@
         <div class="container" id="configuraciones"><br>
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title">Configuraciones Banners</h5>
-                    <a class="btn btn-success" href="<?=base_url('admin/banners/crear');?>">Agregar Primeros Banners</a>
-                    <a href="<?=base_url('admin/dashboard');?>" class="btn btn-primary" type="button">Ir a la parte superior</a>
+                    <h5 class="card-title">Configuraciones Banners | Inhabilitado</h5>
+                    <!--<a class="btn btn-success" href="<?=base_url('admin/banners/crear');?>">Agregar Primeros Banners</a>
+                    <a href="<?=base_url('admin/dashboard');?>" class="btn btn-primary" type="button">Ir a la parte superior</a>-->
                     <form method="post" action="<?=base_url('admin/banners/actualizar'); ?>" enctype="multipart/form-data">
                         <br>
                         <input type="hidden" name="id" value="<?=$config['id'];?>">
@@ -98,7 +98,7 @@
                             <input id="bannerTwo" class="form-control-file" type="file" name="bannerTwo">
                         </div>
                         <br>
-                        <button class="btn btn-warning" type="submit">Actualizar banner (eso solo es cuando ya hay banners creados)</button>
+                        <!--<button class="btn btn-warning" type="submit">Actualizar banner (eso solo es cuando ya hay banners creados)</button>-->
                     </form>
                 </div>
             </div>

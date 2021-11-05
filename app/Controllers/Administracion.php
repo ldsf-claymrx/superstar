@@ -52,6 +52,8 @@ class Administracion extends Controller{
     public function guardar() {
         $producto = new Producto();
 
+        /*
+        ===== Inavilitado por falla en imagenes ====
         if($imagen = $this->request->getFile('imagen')) {
             $nuevoNombre= $imagen->getRandomName();
             $imagen->move('../public/images', $nuevoNombre);
@@ -63,7 +65,16 @@ class Administracion extends Controller{
             ];
 
             $producto->insert($datos);
-        }
+        }*/
+
+        $datos = [
+            'nombre' => $this->request->getVar('nombre'),
+            'descripcion' => $this->request->getVar('descripcion'),
+            'precio' => $this->request->getVar('precio')
+        ];
+
+        $producto->insert($datos);
+
         return $this->response->redirect(base_url('admin/dashboard#productos'));
     }
 
@@ -197,7 +208,7 @@ class Administracion extends Controller{
         $id = $this->request->getVar('id');
         $producto->update($id, $datos);
 
-        $validacion = $this->validate([
+        /*$validacion = $this->validate([
             'imagen' => [
                 'uploaded[imagen]',
                 'mime_in[imagen,image/jpg,image/jpeg,image/png]',
@@ -218,7 +229,7 @@ class Administracion extends Controller{
                 $datos = ['imagen' => $nuevoNombre];
                 $producto->update($id, $datos);
             }
-        }
+        }*/
         return $this->response->redirect(base_url('admin/dashboard#productos'));
     }
 
@@ -245,8 +256,8 @@ class Administracion extends Controller{
         $producto = new Producto();
         $datosProducto = $producto->where('id', $id)->first();
 
-        $ruta = ('../public/images/'.$datosProducto['imagen']);
-        unlink($ruta);
+        /*$ruta = ('../public/images/'.$datosProducto['imagen']);
+        unlink($ruta);*/
 
         $producto->where('id', $id)->delete();
         return $this->response->redirect(base_url('admin/dashboard#productos'));

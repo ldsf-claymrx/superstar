@@ -28,11 +28,11 @@
                                 <input id="precio" class="form-control" type="text" name="precio">
                             </div>
                             <br>
-                            <div class="form-group">
+                            <!--<div class="form-group">
                                 <label for="imagen">Imagen</label>
                                 <input id="imagen" class="form-control-file" type="file" name="imagen">
                             </div>
-                            <br>
+                            <br>-->
                             <button class="btn btn-success" type="submit">Guardar Producto</button>
                         </form>
                     </p>

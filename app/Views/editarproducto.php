@@ -29,13 +29,14 @@
                                 <input id="precio" class="form-control" type="text" name="precio" value="<?=$producto['precio']; ?>">
                             </div>
                             <br>
-                            <div class="form-group">
+                            <!--<div class="form-group">
                                 <label for="imagen">Imagen</label>
                                 <br>
-                                <img class="img-thumbnail" src="<?=base_url()?>/images/<?=$producto['imagen'];?>" width="100" alt="">
+                                ===Aqui iba la imagen =====
                                 <input id="imagen" class="form-control-file" type="file" name="imagen">
                             </div>
-                            <br>
+                            <br>-->
+                            <img class="img-thumbnail" src="<?=base_url()?>/images/<?=$producto['imagen'];?>" width="100" alt="">
                             <button class="btn btn-success" type="submit">Actualizar producto</button>
                         </form>
                     </p>
