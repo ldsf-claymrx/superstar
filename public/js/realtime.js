@@ -3,10 +3,10 @@ function fuc_tiempo_real(){
     /* Funcion terminada, determina el estado actual del negocio
     y muestra el mensaje diseñado para ello cada ocación. */
     $.ajax({
-        url: 'http://localhost:8080/validacion-tiempo-real',
+        url: 'https://superstarweb.com.mx/validacion-tiempo-real',
         success: function(data) {
             if(data == 1) {
-                window.location = "http://localhost:8080/pedidos-tiempo-real";
+                window.location = "https://superstarweb.com.mx/pedidos-tiempo-real";
             } else if(data == 2) {
                 //alert("Esta cerrado");
                 Swal.fire({
